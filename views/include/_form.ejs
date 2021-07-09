@@ -1,0 +1,50 @@
+ <!-- form handling -->
+ <form action="/api/users" method="POST" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="cricketer_name" class="text-light">cricketer_name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="cricketer_name" value="" placeholder="Kohli">
+        </div>
+        <div class="form-group">
+            <label for="country" class="text-light">country</label>
+            <input type="text" name="country" value="" placeholder="INDIA">
+        </div>
+        <div class="form-group">
+            <label for="number" class="text-light">number</label>
+            <input type="text" name="number" value="" placeholder="18">
+        </div>
+        <div class="form-group">
+            <label for="type" class="text-light">Type</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="type" value="Batsman" >
+                <label for="radio-2" class="radio-label">Batsman</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="gender" value="Bowler" >
+                <label for="radio-3" class="radio-label">Bowler</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="gender" value="Allrounder" >
+                <label for="radio-3" class="radio-label">Allrounder</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="gender" class="text-light">Status</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-4" name="status" value="Active" >
+                <label for="radio-4" class="radio-label">Active</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-5" name="status" value="Inactive" >
+                <label for="radio-5" class="radio-label">Inactive</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>
